@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<main>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Pomodoro Timer First Meeting</title>
+        <link rel="icon" type="image/x-icon" href="/Lab2_Starter/LEBRON.jpg">
+    </head>
+
+    <body>
+        <header>
+            <p><strong>PROJECT:</strong> Pomodoro Timer</p>
+            <p><strong>MEETING:</strong> Brainstorming</p>
+            <p><strong>DATE:</strong> April 15, 2025</p>
+            <p><strong>TIME:</strong> 12:00pm - 1:00pm</p>
+        </header>
+
+        <section>
+            <h1 id="attendees"><span>Attendance List</span></h1>
+            <details>
+                <summary>Important people who attended the meeting</summary>
+                <p>LEBRON James</p>
+            </details>
+
+            <div>
+                <ul>
+                    <li><b>LeBron James</b></li>
+                    <li><i>Ludwig van Beethoven</i></li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart?variant=zh-cn">
+                            <em>Wolfgang Amadeus Mozart</em>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="ideas">Brainstorming</h2>
+            <p>25 minute timer for studying <br> 10 minute timer for break</p>
+        </section>
+
+        <section>
+            <h3 id="agenda">Agenda</h3>
+            <ol>
+                <li>Plan</li>
+                <li>Implement</li>
+                <li>???</li>
+                <li>Profit</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Meeting Video</h3>
+            <video controls>
+                <source src="/Lab2_Starter/meeting_video.mp4">
+            </video>
+
+            <h3>Meeting Audio</h3>
+            <audio controls>
+                <source src="/Lab2_Starter/meeting_audio.mp3">
+            </audio>
+        </section>
+    </body>
+
+    <footer>
+        <nav>
+            <a href="#attendees">Attendance List</a> |
+            <a href="#ideas">Brainstorming</a> |
+            <a href="#agenda">Agenda</a>
+        </nav>
+    </footer>
+
+    <h1>Voluntary Information</h1>
+    <form>
+        <fieldset>
+            <p>What is your name?</p>
+            <textarea placeholder="Write name here."></textarea>
+
+            <p>Favorite color?</p>
+            <select>
+                <option>White</option>
+                <option>Blue</option>
+            </select>
+
+            <p>Favorite athlete?</p>
+            <img src="/Lab2_Starter/LEBRON.jpg">
+            <br>
+            <input list="athletes" placeholder="Click twice for options.">
+            <datalist id="athletes">
+                <option value="Lebron James">
+                <option value="The option above">
+            </datalist>
+
+            <br>
+            <p>Are you a robot?</p>
+            <input type="checkbox" id="robot">
+            <label for="question">I am a robot.</label>
+            <br>
+
+            <p>Do you drink water daily?</p>
+            <input type="radio" id="water">
+            <label for="water">I drink water everyday.</label>
+
+            <br>
+            <p>What are your hobbies?</p>
+            <input type="text" placeholder="List hobbies here">
+
+            <br>
+            <p>What is your date of birth?</p>
+            <input type="date">
+
+            <br>
+            <br>
+            <button>Submit</button>
+        </fieldset>
+    </form>
+</main>
+
+</html>
