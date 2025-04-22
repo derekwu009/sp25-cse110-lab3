@@ -1,2 +1,1 @@
-# Lab 2 - Starter
-https://derekwu009.github.io/Lab2_Starter/
+derekwu009.github.io/sp25-cse110-lab3
