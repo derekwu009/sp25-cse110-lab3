@@ -1,0 +1,140 @@
+/* color using rgb */
+#attendees {
+    color: rgb(5, 95, 95);
+}
+
+/* color using hex codes */
+#agenda {
+    color: #002e85;
+}
+
+/* color using hue, saturation, lightness */
+#meeting-vid {
+    color: hsl(250, 50%, 60%);
+
+    /* position example 1 */
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+/* pseudo-class */
+header:hover {
+    color: black;
+}
+
+/* pseudo-class; changes button color when pressed */
+#btn:active {
+    background-color: chocolate;
+}
+
+/* color name */
+#ideas {
+    color: maroon;
+}
+
+/* color using wider-gamut color */
+#meeting-audio {
+    color: color(display-p3 0 1 1);
+}
+
+/* change background color */
+body {
+    background-color: antiquewhite;
+}
+
+/* absolute units */
+h3 {
+    letter-spacing: 2pt;
+    font-size: 24px;
+}
+
+#participants {
+    text-indent: 5mm;
+}
+
+/* relative units */
+nav {
+    word-spacing: 1vw;
+    margin-top: 2em;
+    font-size: 1.25rem;
+
+    /* font */
+    font-family: "JetBrains Mono", monospace;
+
+    /* display example 1 */
+    display: block;
+}
+
+header {
+    /* margin long notation */
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+    /* padding long notation */
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+
+    /* borders */
+    border-style: double;
+    border-color: green;
+    border-width: 5px;
+    border-radius: 20px;
+
+    /* display example 2 */
+    display: inline-block;
+
+    /* position example 2 */
+    position: static;
+}
+
+footer {
+    /* margin short notation */
+    margin: 20px, 20px, 10px, 10px;
+    /* padding short notation */
+    padding: 20px, 20px, 10px, 10px;
+}
+
+form {
+    /* auto margins */
+    margin: 50px auto;
+
+    /* sizing */
+    height: 1000px;
+    width: 1000px;
+    max-width: 1000px;
+    min-width: 500px;
+}
+
+/* grid */
+#attendance-list {
+    display: grid;
+    justify-self: start;
+    align-self: center;
+    gap: 2rem;
+}
+
+/* flexbox */
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+
+    body {
+        width: 80%;
+        font-size: 14px;
+    }
+}
