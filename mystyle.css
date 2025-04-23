@@ -7,7 +7,9 @@
 /* color using rgb */
 /* id selector */
 #attendees {
-    color: rgb(5, 95, 95);
+    /* variables and fallbacks */
+    --main-color: orange;
+    color: var(--main-color, rgb(5, 95, 95));
 }
 
 /* color using hex codes */
