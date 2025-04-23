@@ -5,11 +5,26 @@
     <meta charset="UTF-8">
     <title>Pomodoro Timer First Meeting</title>
     <link rel="icon" type="image/x-icon" href="/Lab2_Starter/LEBRON.jpg">
+    <link rel="stylesheet" href="mystyle.css">
+
+    <!--load 3rd party font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <main>
         <header>
+            <!--internal CSS with <style>-->
+            <style>
+                header {
+                    color: darkcyan;
+                    text-decoration: underline;
+                    text-align: center;
+                }
+            </style>
             <p><strong>PROJECT:</strong> Pomodoro Timer</p>
             <p><strong>MEETING:</strong> Brainstorming</p>
             <p><strong>DATE:</strong> April 15, 2025</p>
@@ -17,14 +32,15 @@
         </header>
 
         <hr>
-        <section>
+        <section id="attendance-list">
             <h1 id="attendees"><span>Attendance List</span></h1>
             <details>
                 <summary>Important people who attended the meeting</summary>
-                <p>LEBRON James</p>
+                <!--inline CSS-->
+                <p style="color: darkmagenta; font-size: 20px;">LEBRON James</p>
             </details>
 
-            <div>
+            <div id="participants">
                 <ul>
                     <li><b>LeBron James</b></li>
                     <li><i>Ludwig van Beethoven</i></li>
@@ -53,14 +69,14 @@
         </section>
 
         <section>
-            <h3>Meeting Video</h3>
+            <h3 id="meeting-vid">Meeting Video</h3>
             <video controls>
-                <source src="/Lab2_Starter/meeting_video.mp4">
+                <source src="/meeting_video.mp4">
             </video>
 
-            <h3>Meeting Audio</h3>
+            <h3 id="meeting-audio">Meeting Audio</h3>
             <audio controls>
-                <source src="/Lab2_Starter/meeting_audio.mp3">
+                <source src="/meeting_audio.mp3">
             </audio>
         </section>
     </main>
@@ -72,6 +88,7 @@
             <a href="#agenda">Agenda</a>
         </nav>
     </footer>
+
     <h1>Voluntary Information</h1>
     <form>
         <fieldset>
@@ -85,7 +102,7 @@
             </select>
 
             <p>Favorite athlete?</p>
-            <img src="/Lab2_Starter/LEBRON.jpg" alt="picture of lebron">
+            <img src="/LEBRON.jpg" alt="picture of lebron">
             <br>
             <input list="athletes" placeholder="Click twice for options.">
             <datalist id="athletes">
@@ -113,7 +130,7 @@
 
             <br>
             <br>
-            <button>Submit</button>
+            <button id="btn">Submit</button>
         </fieldset>
     </form>
 </body>
